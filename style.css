@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #f8f9fc;
+color: #1f2937;
+line-height: 1.6;
+}
+
+/* NAVBAR */
+
+header {
+background: white;
+border-bottom: 1px solid #e5e7eb;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.navbar {
+max-width: 1100px;
+margin: auto;
+padding: 18px 25px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+text-decoration: none;
+font-size: 24px;
+font-weight: bold;
+color: #111827;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+gap: 28px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #4b5563;
+font-size: 15px;
+transition: 0.3s;
+}
+
+.nav-links a:hover {
+color: #6366f1;
+}
+
+/* SECTIONS */
+
+.section {
+max-width: 1100px;
+margin: auto;
+padding: 90px 25px;
+}
+
+.section-tag {
+color: #6366f1;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+.section h2 {
+font-size: 38px;
+margin: 8px 0 25px;
+color: #111827;
+}
+
+.about-text {
+max-width: 700px;
+color: #6b7280;
+font-size: 18px;
+margin-bottom: 18px;
+}
+
+/* PROJECTS */
+
+.projects-container {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 25px;
+}
+
+.project-card {
+background: white;
+border: 1px solid #e5e7eb;
+border-radius: 14px;
+padding: 30px;
+transition: 0.3s;
+}
+
+.project-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.project-number {
+color: #6366f1;
+font-weight: bold;
+}
+
+.project-card h3 {
+font-size: 24px;
+margin: 12px 0;
+}
+
+.project-card p {
+color: #6b7280;
+margin-bottom: 20px;
+}
+
+/* TECHNOLOGY BADGES */
+
+.tech-stack {
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+margin-bottom: 22px;
+}
+
+.tech-stack span {
+padding: 6px 12px;
+background: #eef2ff;
+color: #4f46e5;
+border-radius: 20px;
+font-size: 13px;
+font-weight: bold;
+}
+
+/* PROJECT BUTTON */
+
+.github-btn {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 8px;
+background: #6366f1;
+color: white !important;
+text-decoration: none;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.github-btn:hover {
+background: #4f46e5;
+}
+
+/* SKILLS */
+
+.skills-container {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+}
+
+.skills-container span {
+background: white;
+border: 1px solid #e5e7eb;
+padding: 12px 20px;
+border-radius: 30px;
+font-weight: bold;
+}
+
+/* CONTACT */
+
+.contact {
+text-align: center;
+}
+
+.contact p:not(.section-tag) {
+color: #6b7280;
+margin-bottom: 25px;
+}
+
+.btn {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 8px;
+background: #6366f1;
+color: white;
+text-decoration: none;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.btn:hover {
+background: #4f46e5;
+}
+
+/* FOOTER */
+
+footer {
+text-align: center;
+padding: 25px;
+background: #111827;
+color: #d1d5db;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+.navbar {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section {
+    padding: 70px 20px;
+}
+
+.section h2 {
+    font-size: 32px;
+}
+
+.about-text {
+    font-size: 16px;
+}
+
+.projects-container {
+    grid-template-columns: 1fr;
+}
+
+}
