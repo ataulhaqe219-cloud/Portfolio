@@ -324,7 +324,7 @@ footer {
     }
 
     .nav-links {
-        gap: 33px 12px;
+        gap: 12px 33px;
     }
 
     .nav-links a {
